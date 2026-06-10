@@ -68,20 +68,15 @@ def text_width(text: str, char_width: int = 7, padding: int = 22) -> int:
 
 
 def build_svg(subscribers: int, source: str) -> str:
-    remaining = max(GOAL - subscribers, 0)
     label = f"YouTube to {format_count(GOAL)}"
-    message = (
-        f"{format_count(remaining)} to go"
-        if remaining
-        else f"{format_count(subscribers)} reached"
-    )
+    message = format_count(subscribers)
 
     left_width = text_width(label)
     right_width = text_width(message)
     width = left_width + right_width
     label_x = left_width / 2
     message_x = left_width + right_width / 2
-    title = f"{label}: {message} (source: {source})"
+    title = f"{label}: {message} subscribers (source: {source})"
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="20" role="img" aria-label="{html.escape(title)}">
   <title>{html.escape(title)}</title>
