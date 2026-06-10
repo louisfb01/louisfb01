@@ -41,21 +41,44 @@ I also create [What's AI](https://www.youtube.com/@whatsai), a YouTube channel I
 
 My bias is simple: start with the simplest system that can work, add agents only when autonomy is actually useful, and evaluate before real users do it for you.
 
-## Towards AI
+## Education & Towards AI
 
 <table>
   <tr>
-    <td width="34%" align="center">
-      <img src="./images/towards-ai.svg" alt="Towards AI" width="280"><br><br>
-      <img src="./images/profile.png" alt="Louis-Francois Bouchard" width="180">
+    <td width="45%" align="center">
+      <img src="./images/profile.png" alt="Louis-Francois Bouchard" width="190">
+      <br><br>
+      <strong>Building and teaching practical AI engineering.</strong>
+      <br><br>
+      I focus on making LLMs, RAG, agents, evaluation, and production AI systems easier to understand and ship.
+      <br><br>
+      <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="46"></a>
+      <br><br>
+      <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="42"></a>
     </td>
-    <td width="66%">
-      <strong>Training AI engineers and helping teams deploy AI systems.</strong>
+    <td width="55%">
+      <a href="https://towardsai.net/"><img src="./images/towards-ai.svg" alt="Towards AI" width="300"></a>
       <br><br>
-      Towards AI offers practical courses for developers, professionals, and companies, plus hands-on consulting for teams building with LLMs, RAG, agents, workflows, and evaluation pipelines.
+      <strong>Towards AI helps people and teams create real value with AI.</strong>
       <br><br>
-      <a href="https://academy.towardsai.net/?ref=1f9b29"><img src="./images/academy.svg" alt="Towards AI Academy" height="46"></a>
-      <a href="https://towardsai.net/b2b"><img src="./images/consulting.svg" alt="Towards AI Consulting" height="46"></a>
+      <table>
+        <tr>
+          <td width="50%">
+            <strong>Towards AI</strong>
+            <br><br>
+            Enterprise enablement, consulting, workshops, and hands-on support for teams deploying AI systems.
+            <br><br>
+            <a href="https://towardsai.net/enterpriseenablement/"><img src="./images/consulting.svg" alt="Towards AI Enterprise Enablement" height="46"></a>
+          </td>
+          <td width="50%">
+            <strong>Towards AI Academy</strong>
+            <br><br>
+            Practical courses for AI engineers, developers, and professionals learning to build with LLMs.
+            <br><br>
+            <a href="https://academy.towardsai.net/?ref=1f9b29"><img src="./images/academy.svg" alt="Towards AI Academy" height="46"></a>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
@@ -72,5 +95,5 @@ My bias is simple: start with the simplest system that can work, add agents only
 <p align="center">
   <a href="https://www.youtube.com/@whatsai"><strong>Watch What's AI on YouTube</strong></a> |
   <a href="https://academy.towardsai.net/?ref=1f9b29"><strong>Learn AI Engineering</strong></a> |
-  <a href="https://towardsai.net/b2b"><strong>Work with Towards AI</strong></a>
+  <a href="https://towardsai.net/enterpriseenablement/"><strong>Work with Towards AI</strong></a>
 </p>
