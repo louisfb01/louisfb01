@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="105" viewBox="0 0 340 105" role="img" aria-label="Towards AI">
+  <rect width="340" height="105" rx="10" fill="#07111f"/>
+  <path d="M28 67h50l12-29h14L86 80H21z" fill="#1c9bd1"/>
+  <path d="M104 80l25-42h15l25 42h-17l-5-9h-23l-5 9zM130 60h12l-6-11z" fill="#49b6e8"/>
+  <text x="178" y="54" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">TOWARDS AI</text>
+  <text x="181" y="77" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Courses, training, and consulting</text>
+</svg>
+
