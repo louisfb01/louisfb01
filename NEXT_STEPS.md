@@ -7,6 +7,7 @@ Status:
 - The standalone YouTube subscriber badge was removed to avoid duplication.
 - YouTube milestone badge is implemented through `images/youtube-countdown.svg`; it shows the current subscriber count against the 100K goal.
 - The countdown refreshes daily through `.github/workflows/update-youtube-countdown.yml`.
+- Without `YOUTUBE_API_KEY`, the badge uses the rounded Shields.io count. With `YOUTUBE_API_KEY`, it displays the exact comma-formatted subscriber count from YouTube.
 - Profile views are already live through Komarev.
 - GitHub follower count is live through Shields.io.
 

@@ -32,7 +32,7 @@ def parse_compact_count(value: str) -> int:
     return int(number * multiplier)
 
 
-def fetch_subscribers() -> tuple[int, str]:
+def fetch_subscribers() -> tuple[int, str, bool]:
     api_key = os.getenv("YOUTUBE_API_KEY")
     if api_key:
         url = (
@@ -45,14 +45,14 @@ def fetch_subscribers() -> tuple[int, str]:
             raise RuntimeError("YouTube API returned no channel items.")
 
         count = int(items[0]["statistics"]["subscriberCount"])
-        return count, "YouTube API"
+        return count, "YouTube API", True
 
     url = (
         "https://img.shields.io/youtube/channel/subscribers/"
         f"{CHANNEL_ID}.json?label=YouTube%20subscribers"
     )
     data = fetch_json(url)
-    return parse_compact_count(data["message"]), "Shields.io"
+    return parse_compact_count(data["message"]), "Shields.io", False
 
 
 def format_count(value: int) -> str:
@@ -67,9 +67,9 @@ def text_width(text: str, char_width: int = 7, padding: int = 22) -> int:
     return max(40, len(text) * char_width + padding)
 
 
-def build_svg(subscribers: int, source: str) -> str:
+def build_svg(subscribers: int, source: str, exact: bool) -> str:
     label = f"YouTube to {format_count(GOAL)}"
-    message = format_count(subscribers)
+    message = f"{subscribers:,}" if exact else format_count(subscribers)
 
     left_width = text_width(label)
     right_width = text_width(message)
@@ -93,9 +93,9 @@ def build_svg(subscribers: int, source: str) -> str:
 
 
 def main() -> None:
-    subscribers, source = fetch_subscribers()
+    subscribers, source, exact = fetch_subscribers()
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(build_svg(subscribers, source), encoding="utf-8")
+    OUTPUT.write_text(build_svg(subscribers, source, exact), encoding="utf-8")
     print(f"Generated {OUTPUT} from {source}: {subscribers} subscribers.")
 
 
