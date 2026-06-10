@@ -23,7 +23,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=louisfb01&label=Profile%20views&color=0A7FDB&style=flat-square" alt="Profile views">
-  <img src="https://img.shields.io/github/followers/louisfb01?label=GitHub%20followers&style=flat-square&color=0A7FDB" alt="GitHub followers">
+  <img src="https://img.shields.io/badge/GitHub%20followers-1.6K%2B-0A7FDB?style=flat-square&logo=github&logoColor=white" alt="GitHub followers">
   <img src="https://img.shields.io/youtube/channel/subscribers/UCUzGQrN-lyyc0BWTYoJM_Sg?label=YouTube%20subscribers&style=flat-square&color=FF0000&logo=youtube&logoColor=white" alt="YouTube subscribers">
 </p>
 
