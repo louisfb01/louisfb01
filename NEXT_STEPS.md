@@ -10,27 +10,34 @@ Status:
 - Profile views are already live through Komarev.
 - GitHub follower count is live through Shields.io.
 
-Assessment:
+## Free Exact YouTube Count
 
-- A real "YouTube to 100K" badge is now implemented through the scheduled GitHub Action. Without a `YOUTUBE_API_KEY` secret it uses Shields.io's JSON response, which is rounded and therefore approximate. With `YOUTUBE_API_KEY`, the same script switches to exact YouTube Data API statistics.
-- X follower counts are possible with API-backed automation only. X's user lookup endpoint requires bearer-token authorization and exposes counts through `user.fields=public_metrics`; the public Shields X followers badge returns an empty value for `Whats_AI`, so there is no reliable no-token badge to add. Whether it is free depends on whether the current X developer plan grants user lookup access for your app; if it does, the repo only needs an `X_BEARER_TOKEN` secret.
-- LinkedIn follower counts are possible for organization pages through official LinkedIn APIs, but not as a public no-token badge. Organization follower statistics require `rw_organization_admin`; Microsoft also notes total follower count should be retrieved via the `networkSizes` API under Organization Lookup. This can be free in the sense that there is no repo-side hosting cost, but it requires LinkedIn developer access, an app, an access token, an organization URN, and approved permissions. For a personal LinkedIn profile, there is no clean official public follower-count badge.
-- Newsletter/Substack counters need either a reliable private export/API source or a manually maintained badge. I did not find a stable official public subscriber-count endpoint suitable for a GitHub README automation.
-- YouTube is the cleanest first version and is implemented. X and LinkedIn are technically feasible after adding credentials as repo secrets, but they are not guaranteed to be free because access depends on each platform's current developer/API permissions. Substack/newsletter is feasible only if we choose a trusted source for the count.
+`YOUTUBE_API_KEY` should be free for this use case under the normal YouTube Data API quota.
+I removed the X, LinkedIn, and newsletter counter ideas from this file because the reliable versions require platform credentials, approved API access, or unclear paid/gated developer plans.
 
-Recommended implementation:
+Why:
 
-- Optional: add `YOUTUBE_API_KEY` as a GitHub repo secret for exact subscriber counts instead of rounded Shields.io counts.
-- Optional: run the `Update YouTube Countdown` workflow manually after adding the secret.
-- Optional: add `X_BEARER_TOKEN` to generate an X follower badge through the official X API.
-- Optional: add `LINKEDIN_ACCESS_TOKEN` and `LINKEDIN_ORGANIZATION_URN` to generate an organization follower badge through LinkedIn's official API.
-- Optional: add a newsletter count source, such as a private export committed by automation, before adding a newsletter milestone badge.
+- The badge uses `channels.list`, which costs 1 quota unit per request.
+- Google gives YouTube Data API projects 10,000 quota units per day for most endpoints.
+- The GitHub Action runs once per day, so exact counts should use about 1 quota unit per day.
+- That leaves roughly 9,999 unused quota units per day for this project if this badge is the only thing using the API.
 
-Suggested order:
+What to do:
 
-- X follower badge after `X_BEARER_TOKEN` is available.
-- LinkedIn organization follower badge after `LINKEDIN_ACCESS_TOKEN` and `LINKEDIN_ORGANIZATION_URN` are available.
-- Newsletter/Substack milestone after a reliable export or API source is available.
+- Open the [Google API Console credentials page](https://console.cloud.google.com/apis/credentials).
+- Create or select a Google Cloud project.
+- Enable the YouTube Data API v3.
+- Create an API key.
+- Restrict the key to the YouTube Data API v3 if Google offers that option.
+- In GitHub, open `louisfb01/louisfb01` -> Settings -> Secrets and variables -> Actions.
+- Add a repository secret named `YOUTUBE_API_KEY`.
+- Paste the API key as the value.
+- Go to Actions -> `Update YouTube Countdown` -> `Run workflow`.
+
+References:
+
+- [YouTube Data API quota costs](https://developers.google.com/youtube/v3/determine_quota_cost)
+- [YouTube Data API credential setup](https://developers.google.com/youtube/registering_an_application)
 
 ## Profile Maintenance
 
