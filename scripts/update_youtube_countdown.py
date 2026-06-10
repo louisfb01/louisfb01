@@ -2,7 +2,10 @@ import html
 import json
 import os
 import re
+import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
+from dataclasses import dataclass
 from pathlib import Path
 
 
@@ -11,6 +14,26 @@ CHANNEL_TITLE = os.getenv("YOUTUBE_CHANNEL_TITLE", "What's AI")
 GOAL = int(os.getenv("YOUTUBE_SUBSCRIBER_GOAL", "100000"))
 COUNTDOWN_OUTPUT = Path("images/youtube-countdown.svg")
 BUTTON_OUTPUT = Path("images/youtube.svg")
+README = Path("README.md")
+LATEST_VIDEO_START = "<!-- LATEST_YOUTUBE_VIDEO:START -->"
+LATEST_VIDEO_END = "<!-- LATEST_YOUTUBE_VIDEO:END -->"
+
+
+@dataclass(frozen=True)
+class ChannelStats:
+    subscribers: int
+    source: str
+    exact: bool
+    uploads_playlist_id: str | None = None
+
+
+@dataclass(frozen=True)
+class LatestVideo:
+    title: str
+    video_id: str
+    url: str
+    thumbnail_url: str
+    published_at: str | None = None
 
 
 def fetch_json(url: str) -> dict:
@@ -20,6 +43,10 @@ def fetch_json(url: str) -> dict:
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def build_url(base_url: str, params: dict[str, str | int]) -> str:
+    return f"{base_url}?{urllib.parse.urlencode(params)}"
 
 
 def parse_compact_count(value: str) -> int:
@@ -34,27 +61,127 @@ def parse_compact_count(value: str) -> int:
     return int(number * multiplier)
 
 
-def fetch_subscribers() -> tuple[int, str, bool]:
+def fetch_channel_stats() -> ChannelStats:
     api_key = os.getenv("YOUTUBE_API_KEY")
     if api_key:
-        url = (
-            "https://www.googleapis.com/youtube/v3/channels"
-            f"?part=statistics&id={CHANNEL_ID}&key={api_key}"
+        url = build_url(
+            "https://www.googleapis.com/youtube/v3/channels",
+            {
+                "part": "statistics,contentDetails",
+                "id": CHANNEL_ID,
+                "key": api_key,
+            },
         )
         data = fetch_json(url)
         items = data.get("items", [])
         if not items:
             raise RuntimeError("YouTube API returned no channel items.")
 
-        count = int(items[0]["statistics"]["subscriberCount"])
-        return count, "YouTube API", True
+        channel = items[0]
+        count = int(channel["statistics"]["subscriberCount"])
+        uploads_playlist_id = channel.get("contentDetails", {}).get("relatedPlaylists", {}).get("uploads")
+        return ChannelStats(count, "YouTube API", True, uploads_playlist_id)
 
-    url = (
-        "https://img.shields.io/youtube/channel/subscribers/"
-        f"{CHANNEL_ID}.json?label=YouTube%20subscribers"
+    url = build_url(
+        f"https://img.shields.io/youtube/channel/subscribers/{CHANNEL_ID}.json",
+        {"label": "YouTube subscribers"},
     )
     data = fetch_json(url)
-    return parse_compact_count(data["message"]), "Shields.io", False
+    return ChannelStats(parse_compact_count(data["message"]), "Shields.io", False)
+
+
+def best_thumbnail(thumbnails: dict) -> str | None:
+    for key in ("maxres", "standard", "high", "medium", "default"):
+        thumbnail = thumbnails.get(key)
+        if thumbnail and thumbnail.get("url"):
+            return thumbnail["url"]
+    return None
+
+
+def fetch_latest_video_from_api(api_key: str, uploads_playlist_id: str) -> LatestVideo:
+    url = build_url(
+        "https://www.googleapis.com/youtube/v3/playlistItems",
+        {
+            "part": "snippet,contentDetails",
+            "playlistId": uploads_playlist_id,
+            "maxResults": 1,
+            "key": api_key,
+        },
+    )
+    data = fetch_json(url)
+    items = data.get("items", [])
+    if not items:
+        raise RuntimeError("YouTube API returned no playlist items.")
+
+    item = items[0]
+    snippet = item["snippet"]
+    video_id = (
+        snippet.get("resourceId", {}).get("videoId")
+        or item.get("contentDetails", {}).get("videoId")
+    )
+    if not video_id:
+        raise RuntimeError("YouTube API returned a playlist item without a video ID.")
+
+    thumbnail_url = best_thumbnail(snippet.get("thumbnails", {}))
+    if not thumbnail_url:
+        thumbnail_url = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
+
+    return LatestVideo(
+        title=snippet["title"],
+        video_id=video_id,
+        url=f"https://www.youtube.com/watch?v={video_id}",
+        thumbnail_url=thumbnail_url,
+        published_at=snippet.get("publishedAt"),
+    )
+
+
+def fetch_latest_video_from_rss() -> LatestVideo:
+    url = build_url(
+        "https://www.youtube.com/feeds/videos.xml",
+        {"channel_id": CHANNEL_ID},
+    )
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "louisfb01-profile-readme/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        root = ET.fromstring(response.read())
+
+    namespaces = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "yt": "http://www.youtube.com/xml/schemas/2015",
+        "media": "http://search.yahoo.com/mrss/",
+    }
+    entry = root.find("atom:entry", namespaces)
+    if entry is None:
+        raise RuntimeError("YouTube RSS feed returned no entries.")
+
+    title = entry.findtext("atom:title", default="", namespaces=namespaces)
+    video_id = entry.findtext("yt:videoId", default="", namespaces=namespaces)
+    published_at = entry.findtext("atom:published", default="", namespaces=namespaces) or None
+    link = entry.find("atom:link", namespaces)
+    media_group = entry.find("media:group", namespaces)
+    thumbnail = media_group.find("media:thumbnail", namespaces) if media_group is not None else None
+    thumbnail_url = thumbnail.attrib.get("url") if thumbnail is not None else None
+
+    if not video_id:
+        raise RuntimeError("YouTube RSS feed returned an entry without a video ID.")
+
+    return LatestVideo(
+        title=title,
+        video_id=video_id,
+        url=link.attrib.get("href", f"https://www.youtube.com/watch?v={video_id}") if link is not None else f"https://www.youtube.com/watch?v={video_id}",
+        thumbnail_url=thumbnail_url or f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg",
+        published_at=published_at,
+    )
+
+
+def fetch_latest_video(stats: ChannelStats) -> LatestVideo:
+    api_key = os.getenv("YOUTUBE_API_KEY")
+    if api_key and stats.uploads_playlist_id:
+        return fetch_latest_video_from_api(api_key, stats.uploads_playlist_id)
+
+    return fetch_latest_video_from_rss()
 
 
 def format_count(value: int) -> str:
@@ -110,12 +237,62 @@ def build_button_svg(subscribers: int, source: str, exact: bool) -> str:
 """
 
 
+def build_latest_video_block(video: LatestVideo) -> str:
+    title = html.escape(video.title)
+    alt = html.escape(f"Latest {CHANNEL_TITLE} video: {video.title}", quote=True)
+    image_src = html.escape(video.thumbnail_url, quote=True)
+    video_url = html.escape(video.url, quote=True)
+
+    return f"""{LATEST_VIDEO_START}
+### What I'm Up To
+
+<p align="center">
+  <a href="{video_url}">
+    <img src="{image_src}" alt="{alt}" width="560">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Most recent video:</strong> <a href="{video_url}">{title}</a><br>
+  <a href="{video_url}"><strong>Watch on YouTube</strong></a>
+</p>
+{LATEST_VIDEO_END}"""
+
+
+def update_latest_video_block(video: LatestVideo) -> None:
+    readme = README.read_text(encoding="utf-8")
+    block = build_latest_video_block(video)
+
+    if LATEST_VIDEO_START in readme and LATEST_VIDEO_END in readme:
+        pattern = re.compile(
+            rf"{re.escape(LATEST_VIDEO_START)}.*?{re.escape(LATEST_VIDEO_END)}",
+            re.DOTALL,
+        )
+        updated = pattern.sub(block, readme, count=1)
+    else:
+        heading = "## Education & Towards AI"
+        updated = readme.replace(heading, f"{heading}\n\n{block}", 1)
+
+    README.write_text(updated, encoding="utf-8")
+
+
 def main() -> None:
-    subscribers, source, exact = fetch_subscribers()
+    stats = fetch_channel_stats()
+    latest_video = fetch_latest_video(stats)
     COUNTDOWN_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    COUNTDOWN_OUTPUT.write_text(build_countdown_svg(subscribers, source, exact), encoding="utf-8")
-    BUTTON_OUTPUT.write_text(build_button_svg(subscribers, source, exact), encoding="utf-8")
-    print(f"Generated YouTube SVGs from {source}: {subscribers} subscribers.")
+    COUNTDOWN_OUTPUT.write_text(
+        build_countdown_svg(stats.subscribers, stats.source, stats.exact),
+        encoding="utf-8",
+    )
+    BUTTON_OUTPUT.write_text(
+        build_button_svg(stats.subscribers, stats.source, stats.exact),
+        encoding="utf-8",
+    )
+    update_latest_video_block(latest_video)
+    print(
+        f"Generated YouTube README assets from {stats.source}: "
+        f"{stats.subscribers} subscribers, latest video {latest_video.video_id}."
+    )
 
 
 if __name__ == "__main__":
