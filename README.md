@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="34"></a>
+  <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg?refresh=stats" alt="YouTube - What's AI subscriber count" height="34"></a>
   <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="34"></a>
   <a href="https://www.linkedin.com/in/whats-ai/"><img src="./images/linkedin.svg" alt="LinkedIn" height="34"></a>
   <a href="https://twitter.com/Whats_AI"><img src="./images/x.svg" alt="X" height="34"></a>
@@ -21,7 +21,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=louisfb01&label=Profile%20views&color=0A7FDB&style=flat-square" alt="Profile views">
   <img src="https://img.shields.io/github/followers/louisfb01?label=GitHub%20followers&style=flat-square&color=0A7FDB&logo=github&logoColor=white" alt="GitHub followers">
-  <img src="./images/youtube-countdown.svg" alt="YouTube subscriber countdown to 100K">
+  <img src="./images/youtube-countdown.svg?refresh=stats" alt="YouTube subscriber countdown to 100K">
 </p>
 
 ---

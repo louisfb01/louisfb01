@@ -3,7 +3,7 @@ name: Update YouTube Countdown
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 8 * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -24,6 +24,7 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YOUTUBE_CHANNEL_ID: UCUzGQrN-lyyc0BWTYoJM_Sg
+          YOUTUBE_CHANNEL_TITLE: "What's AI"
           YOUTUBE_SUBSCRIBER_GOAL: "100000"
         run: python scripts/update_youtube_countdown.py
 
@@ -31,7 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/youtube-countdown.svg
+          git add images/youtube.svg images/youtube-countdown.svg
           if git diff --cached --quiet; then
             echo "No badge changes."
             exit 0

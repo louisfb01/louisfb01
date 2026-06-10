@@ -7,8 +7,10 @@ from pathlib import Path
 
 
 CHANNEL_ID = os.getenv("YOUTUBE_CHANNEL_ID", "UCUzGQrN-lyyc0BWTYoJM_Sg")
+CHANNEL_TITLE = os.getenv("YOUTUBE_CHANNEL_TITLE", "What's AI")
 GOAL = int(os.getenv("YOUTUBE_SUBSCRIBER_GOAL", "100000"))
-OUTPUT = Path("images/youtube-countdown.svg")
+COUNTDOWN_OUTPUT = Path("images/youtube-countdown.svg")
+BUTTON_OUTPUT = Path("images/youtube.svg")
 
 
 def fetch_json(url: str) -> dict:
@@ -67,7 +69,7 @@ def text_width(text: str, char_width: int = 7, padding: int = 22) -> int:
     return max(40, len(text) * char_width + padding)
 
 
-def build_svg(subscribers: int, source: str, exact: bool) -> str:
+def build_countdown_svg(subscribers: int, source: str, exact: bool) -> str:
     label = f"YouTube to {format_count(GOAL)}"
     message = f"{subscribers:,}" if exact else format_count(subscribers)
 
@@ -92,11 +94,28 @@ def build_svg(subscribers: int, source: str, exact: bool) -> str:
 """
 
 
+def build_button_svg(subscribers: int, source: str, exact: bool) -> str:
+    count = f"{subscribers:,}" if exact else format_count(subscribers)
+    subtitle = f"{count} subscribers"
+    title = f"YouTube - {CHANNEL_TITLE}: {subtitle} (source: {source})"
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="188" height="34" viewBox="0 0 188 34" role="img" aria-label="{html.escape(title)}">
+  <title>{html.escape(title)}</title>
+  <rect width="188" height="34" rx="7" fill="#0f172a"/>
+  <rect x="8" y="7" width="31" height="20" rx="6" fill="#ff0000"/>
+  <path d="M21 12v10l9-5z" fill="#ffffff"/>
+  <text x="49" y="15" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">{html.escape(f"YouTube: {CHANNEL_TITLE}")}</text>
+  <text x="49" y="26" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="9">{html.escape(subtitle)}</text>
+</svg>
+"""
+
+
 def main() -> None:
     subscribers, source, exact = fetch_subscribers()
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(build_svg(subscribers, source, exact), encoding="utf-8")
-    print(f"Generated {OUTPUT} from {source}: {subscribers} subscribers.")
+    COUNTDOWN_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    COUNTDOWN_OUTPUT.write_text(build_countdown_svg(subscribers, source, exact), encoding="utf-8")
+    BUTTON_OUTPUT.write_text(build_button_svg(subscribers, source, exact), encoding="utf-8")
+    print(f"Generated YouTube SVGs from {source}: {subscribers} subscribers.")
 
 
 if __name__ == "__main__":
