@@ -23,7 +23,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=louisfb01&label=Profile%20views&color=0A7FDB&style=flat-square" alt="Profile views">
-  <img src="https://img.shields.io/badge/GitHub%20followers-1.6K%2B-0A7FDB?style=flat-square&logo=github&logoColor=white" alt="GitHub followers">
+  <img src="https://img.shields.io/github/followers/louisfb01?label=GitHub%20followers&style=flat-square&color=0A7FDB&logo=github&logoColor=white" alt="GitHub followers">
   <img src="https://img.shields.io/youtube/channel/subscribers/UCUzGQrN-lyyc0BWTYoJM_Sg?label=YouTube%20subscribers&style=flat-square&color=FF0000&logo=youtube&logoColor=white" alt="YouTube subscribers">
 </p>
 
@@ -43,45 +43,42 @@ My bias is simple: start with the simplest system that can work, add agents only
 
 ## Education & Towards AI
 
-<table>
-  <tr>
-    <td width="45%" align="center">
-      <img src="./images/profile.png" alt="Louis-Francois Bouchard" width="190">
-      <br><br>
-      <strong>Building and teaching practical AI engineering.</strong>
-      <br><br>
-      I focus on making LLMs, RAG, agents, evaluation, and production AI systems easier to understand and ship.
-      <br><br>
-      <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="46"></a>
-      <br><br>
-      <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="42"></a>
-    </td>
-    <td width="55%">
-      <a href="https://towardsai.net/"><img src="./images/towards-ai.svg" alt="Towards AI" width="300"></a>
-      <br><br>
-      <strong>Towards AI helps people and teams create real value with AI.</strong>
-      <br><br>
-      <table>
-        <tr>
-          <td width="50%">
-            <strong>Towards AI</strong>
-            <br><br>
-            Enterprise enablement, consulting, workshops, and hands-on support for teams deploying AI systems.
-            <br><br>
-            <a href="https://towardsai.net/enterpriseenablement/"><img src="./images/consulting.svg" alt="Towards AI Enterprise Enablement" height="46"></a>
-          </td>
-          <td width="50%">
-            <strong>Towards AI Academy</strong>
-            <br><br>
-            Practical courses for AI engineers, developers, and professionals learning to build with LLMs.
-            <br><br>
-            <a href="https://academy.towardsai.net/?ref=1f9b29"><img src="./images/academy.svg" alt="Towards AI Academy" height="46"></a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+### I Teach Practical AI Engineering
+
+<p align="center">
+  <img src="./images/profile.png" alt="Louis-Francois Bouchard" width="170">
+</p>
+
+I focus on making LLMs, RAG, agents, evaluation, and production AI systems easier to understand and ship. My main education channels are YouTube and the newsletter.
+
+<p align="center">
+  <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="46"></a>
+  <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="42"></a>
+</p>
+
+### Towards AI
+
+<p align="center">
+  <a href="https://towardsai.net/"><img src="./images/towards-ai.svg" alt="Towards AI" width="340"></a>
+</p>
+
+Towards AI helps people and teams create real value with AI through enterprise enablement, consulting, workshops, and practical AI engineering education.
+
+#### Towards AI: Enterprise Enablement
+
+We help teams identify valuable AI opportunities, build practical workflows, and deploy reliable systems with LLMs, RAG, agents, evaluation, and automation.
+
+<p align="center">
+  <a href="https://towardsai.net/enterpriseenablement/"><img src="./images/consulting.svg" alt="Towards AI Enterprise Enablement" height="46"></a>
+</p>
+
+#### Towards AI Academy
+
+Practical courses for AI engineers, developers, and professionals learning to build with LLMs and production AI systems.
+
+<p align="center">
+  <a href="https://academy.towardsai.net/?ref=1f9b29"><img src="./images/academy.svg" alt="Towards AI Academy" height="46"></a>
+</p>
 
 ## What I Care About
 

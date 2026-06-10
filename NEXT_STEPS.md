@@ -6,7 +6,7 @@ Status:
 
 - YouTube subscriber count is already live in `README.md` through the Shields.io YouTube badge.
 - Profile views are already live through Komarev.
-- GitHub follower count is shown as a stable static badge. The live Shields.io GitHub follower endpoint returns data, but it rendered inconsistently on the profile.
+- GitHub follower count is live through Shields.io.
 
 Assessment:
 
