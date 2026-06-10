@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@whatsai"><img src="https://img.shields.io/badge/YouTube-What%27s%20AI-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube - What's AI"></a>
-  <a href="https://louisbouchard.substack.com/"><img src="https://img.shields.io/badge/Newsletter-What%27s%20AI-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Newsletter"></a>
-  <a href="https://www.linkedin.com/in/whats-ai/"><img src="https://img.shields.io/badge/LinkedIn-Louis-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://twitter.com/Whats_AI"><img src="https://img.shields.io/badge/X-Whats_AI-111111?style=flat-square&logo=x&logoColor=white" alt="X"></a>
-  <a href="https://www.instagram.com/whats_ai/"><img src="https://img.shields.io/badge/Instagram-whats_ai-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
-  <a href="https://www.louisbouchard.ai/"><img src="https://img.shields.io/badge/Blog-louisbouchard.ai-0A7FDB?style=flat-square&logo=googlechrome&logoColor=white" alt="Blog"></a>
-  <a href="https://amzn.to/4bqYU9b"><img src="https://img.shields.io/badge/Book-LLMs-455A64?style=flat-square&logo=bookstack&logoColor=white" alt="Building LLMs for Production book"></a>
+  <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="34"></a>
+  <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="34"></a>
+  <a href="https://www.linkedin.com/in/whats-ai/"><img src="./images/linkedin.svg" alt="LinkedIn" height="34"></a>
+  <a href="https://twitter.com/Whats_AI"><img src="./images/x.svg" alt="X" height="34"></a>
+  <a href="https://www.instagram.com/whats_ai/"><img src="./images/instagram.svg" alt="Instagram" height="34"></a>
+  <a href="https://www.louisbouchard.ai/"><img src="./images/blog.svg" alt="Blog" height="34"></a>
+  <a href="https://amzn.to/4bqYU9b"><img src="./images/book.svg" alt="Building LLMs for Production book" height="34"></a>
 </p>
 
 <p align="center">
@@ -42,12 +42,9 @@ My bias is simple: start with the simplest system that can work, add agents only
 
 | Where | What I do there | Best next step |
 | --- | --- | --- |
-| **What's AI on YouTube** | Practical AI engineering videos about LLMs, RAG, agents, evals, and building reliable systems. | [Watch the channel](https://www.youtube.com/@whatsai) |
-| **What's AI Newsletter** | Written breakdowns, opinions, and resources for people learning and building with AI. | [Subscribe to the newsletter](https://louisbouchard.substack.com/) |
-| **Blog** | Longer-form guides, project notes, and background on my work in AI. | [Read the blog](https://www.louisbouchard.ai/) |
-| **Towards AI** | Enterprise enablement, consulting, workshops, and implementation support for teams creating value with AI. | [Explore enterprise enablement](https://towardsai.net/enterpriseenablement/) |
-| **Towards AI Academy** | Practical courses for AI engineers, developers, and professionals learning to build production AI systems. | [Join the academy](https://academy.towardsai.net/?ref=1f9b29) |
-| **Building LLMs for Production** | A practical book for building, evaluating, and deploying LLM applications. | [Get the book](https://amzn.to/4bqYU9b) |
+| **What's AI** | My education home: YouTube videos and newsletter essays on LLMs, RAG, agents, evals, and production AI. I also co-authored *Building LLMs for Production* and plan to keep turning what I learn into deeper resources. | [Watch YouTube](https://www.youtube.com/@whatsai) / [Subscribe](https://louisbouchard.substack.com/) / [Get the book](https://amzn.to/4bqYU9b) |
+| **Towards AI** | Enterprise enablement, consulting, and hands-on training for professionals and teams becoming AI-first. | [Explore enterprise enablement](https://towardsai.net/enterpriseenablement/) |
+| **Towards AI Academy** | Structured courses and training for developers who want to become AI engineers and build production AI systems. | [Join the academy](https://academy.towardsai.net/?ref=1f9b29) |
 
 ## What I Care About
 

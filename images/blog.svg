@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="34" viewBox="0 0 82 34" role="img" aria-label="Blog">
+  <rect width="82" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="18" cy="17" r="8" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M10 17h16M18 9c3 4 3 12 0 16M18 9c-3 4-3 12 0 16" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="34" y="21" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">Blog</text>
+</svg>

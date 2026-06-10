@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="285" height="46" viewBox="0 0 285 46" role="img" aria-label="YouTube - What's AI">
-  <rect width="285" height="46" rx="8" fill="#0f172a"/>
-  <rect x="10" y="8" width="44" height="30" rx="8" fill="#ff0000"/>
-  <path d="M29 16v14l12-7z" fill="#ffffff"/>
-  <text x="66" y="21" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">YouTube: What's AI</text>
-  <text x="66" y="34" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="11">AI videos since 2020</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="34" viewBox="0 0 154 34" role="img" aria-label="YouTube - What's AI">
+  <rect width="154" height="34" rx="7" fill="#0f172a"/>
+  <rect x="8" y="7" width="31" height="20" rx="6" fill="#ff0000"/>
+  <path d="M21 12v10l9-5z" fill="#ffffff"/>
+  <text x="49" y="15" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">YouTube</text>
+  <text x="49" y="26" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="9">What's AI</text>
 </svg>
-

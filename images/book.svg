@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="190" height="42" viewBox="0 0 190 42" role="img" aria-label="Book">
-  <rect width="190" height="42" rx="8" fill="#263238"/>
-  <path d="M16 10h15c4 0 7 3 7 7v15H22c-3 0-6-3-6-6z" fill="#90caf9"/>
-  <path d="M38 17c0-4 3-7 7-7h12v22H38z" fill="#64b5f6"/>
-  <path d="M38 17v15" stroke="#263238" stroke-width="2"/>
-  <text x="68" y="26" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">LLM Book</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="34" viewBox="0 0 116 34" role="img" aria-label="LLM Book">
+  <rect width="116" height="34" rx="7" fill="#263238"/>
+  <path d="M10 8h12c3 0 5 2.2 5 5.5V26H15c-2.8 0-5-2.2-5-5z" fill="#90caf9"/>
+  <path d="M27 13.5c0-3.3 2-5.5 5-5.5h10v18H27z" fill="#64b5f6"/>
+  <path d="M27 13.5V26" stroke="#263238" stroke-width="2"/>
+  <text x="50" y="21" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">LLM Book</text>
 </svg>
-
