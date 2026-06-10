@@ -40,6 +40,21 @@ My bias is simple: start with the simplest system that can work, add agents only
 
 ## Education & Towards AI
 
+<!-- LATEST_YOUTUBE_VIDEO:START -->
+### What I'm Up To
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0">
+    <img src="https://i.ytimg.com/vi/NjXIIH9vcv0/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Loop Engineering Explained" width="560">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Most recent video:</strong> <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0">Loop Engineering Explained</a><br>
+  <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0"><strong>Watch on YouTube</strong></a>
+</p>
+<!-- LATEST_YOUTUBE_VIDEO:END -->
+
 | Where | What I do there | Best next step |
 | --- | --- | --- |
 | **What's AI** | My education home: YouTube videos and newsletter essays on LLMs, RAG, agents, evals, and production AI. I also co-authored *Building LLMs for Production* and plan to keep turning what I learn into deeper resources. | [Watch YouTube](https://www.youtube.com/@whatsai) / [Subscribe](https://louisbouchard.substack.com/) / [Get the book](https://amzn.to/4bqYU9b) |
