@@ -9,16 +9,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="46"></a>
-</p>
-
-<p align="center">
-  <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="42"></a>
-  <a href="https://www.linkedin.com/in/whats-ai/"><img src="./images/linkedin.svg" alt="LinkedIn" height="42"></a>
-  <a href="https://twitter.com/Whats_AI"><img src="./images/x.svg" alt="X" height="42"></a>
-  <a href="https://www.instagram.com/whats_ai/"><img src="./images/instagram.svg" alt="Instagram" height="42"></a>
-  <a href="https://www.louisbouchard.ai/"><img src="./images/website.svg" alt="Website" height="42"></a>
-  <a href="https://amzn.to/4bqYU9b"><img src="./images/book.svg" alt="Building LLMs for Production book" height="42"></a>
+  <a href="https://www.youtube.com/@whatsai"><img src="https://img.shields.io/badge/YouTube-What%27s%20AI-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube - What's AI"></a>
+  <a href="https://louisbouchard.substack.com/"><img src="https://img.shields.io/badge/Newsletter-What%27s%20AI-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Newsletter"></a>
+  <a href="https://www.linkedin.com/in/whats-ai/"><img src="https://img.shields.io/badge/LinkedIn-Louis-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://twitter.com/Whats_AI"><img src="https://img.shields.io/badge/X-Whats_AI-111111?style=flat-square&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://www.instagram.com/whats_ai/"><img src="https://img.shields.io/badge/Instagram-whats_ai-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://www.louisbouchard.ai/"><img src="https://img.shields.io/badge/Blog-louisbouchard.ai-0A7FDB?style=flat-square&logo=googlechrome&logoColor=white" alt="Blog"></a>
+  <a href="https://amzn.to/4bqYU9b"><img src="https://img.shields.io/badge/Book-LLMs-455A64?style=flat-square&logo=bookstack&logoColor=white" alt="Building LLMs for Production book"></a>
 </p>
 
 <p align="center">
@@ -43,42 +40,14 @@ My bias is simple: start with the simplest system that can work, add agents only
 
 ## Education & Towards AI
 
-### I Teach Practical AI Engineering
-
-<p align="center">
-  <img src="./images/profile.png" alt="Louis-Francois Bouchard" width="170">
-</p>
-
-I focus on making LLMs, RAG, agents, evaluation, and production AI systems easier to understand and ship. My main education channels are YouTube and the newsletter.
-
-<p align="center">
-  <a href="https://www.youtube.com/@whatsai"><img src="./images/youtube.svg" alt="YouTube - What's AI" height="46"></a>
-  <a href="https://louisbouchard.substack.com/"><img src="./images/newsletter.svg" alt="Newsletter" height="42"></a>
-</p>
-
-### Towards AI
-
-<p align="center">
-  <a href="https://towardsai.net/"><img src="./images/towards-ai.svg" alt="Towards AI" width="340"></a>
-</p>
-
-Towards AI helps people and teams create real value with AI through enterprise enablement, consulting, workshops, and practical AI engineering education.
-
-#### Towards AI: Enterprise Enablement
-
-We help teams identify valuable AI opportunities, build practical workflows, and deploy reliable systems with LLMs, RAG, agents, evaluation, and automation.
-
-<p align="center">
-  <a href="https://towardsai.net/enterpriseenablement/"><img src="./images/consulting.svg" alt="Towards AI Enterprise Enablement" height="46"></a>
-</p>
-
-#### Towards AI Academy
-
-Practical courses for AI engineers, developers, and professionals learning to build with LLMs and production AI systems.
-
-<p align="center">
-  <a href="https://academy.towardsai.net/?ref=1f9b29"><img src="./images/academy.svg" alt="Towards AI Academy" height="46"></a>
-</p>
+| Where | What I do there | Best next step |
+| --- | --- | --- |
+| **What's AI on YouTube** | Practical AI engineering videos about LLMs, RAG, agents, evals, and building reliable systems. | [Watch the channel](https://www.youtube.com/@whatsai) |
+| **What's AI Newsletter** | Written breakdowns, opinions, and resources for people learning and building with AI. | [Subscribe to the newsletter](https://louisbouchard.substack.com/) |
+| **Blog** | Longer-form guides, project notes, and background on my work in AI. | [Read the blog](https://www.louisbouchard.ai/) |
+| **Towards AI** | Enterprise enablement, consulting, workshops, and implementation support for teams creating value with AI. | [Explore enterprise enablement](https://towardsai.net/enterpriseenablement/) |
+| **Towards AI Academy** | Practical courses for AI engineers, developers, and professionals learning to build production AI systems. | [Join the academy](https://academy.towardsai.net/?ref=1f9b29) |
+| **Building LLMs for Production** | A practical book for building, evaluating, and deploying LLM applications. | [Get the book](https://amzn.to/4bqYU9b) |
 
 ## What I Care About
 
