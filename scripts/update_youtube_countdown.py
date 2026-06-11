@@ -244,7 +244,11 @@ def build_latest_video_block(video: LatestVideo) -> str:
     video_url = html.escape(video.url, quote=True)
 
     return f"""{LATEST_VIDEO_START}
-### What I'm Up To
+### What I'm Up To?
+
+<p align="center">
+  <strong>Watch my most recent video:</strong> <a href="{video_url}">{title}</a>
+</p>
 
 <p align="center">
   <a href="{video_url}">
@@ -253,7 +257,6 @@ def build_latest_video_block(video: LatestVideo) -> str:
 </p>
 
 <p align="center">
-  <strong>Most recent video:</strong> <a href="{video_url}">{title}</a><br>
   <a href="{video_url}"><strong>Watch on YouTube</strong></a>
 </p>
 {LATEST_VIDEO_END}"""

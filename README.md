@@ -41,7 +41,11 @@ My bias is simple: start with the simplest system that can work, add agents only
 ## Education & Towards AI
 
 <!-- LATEST_YOUTUBE_VIDEO:START -->
-### What I'm Up To
+### What I'm Up To?
+
+<p align="center">
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0">Loop Engineering Explained</a>
+</p>
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0">
@@ -50,7 +54,6 @@ My bias is simple: start with the simplest system that can work, add agents only
 </p>
 
 <p align="center">
-  <strong>Most recent video:</strong> <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0">Loop Engineering Explained</a><br>
   <a href="https://www.youtube.com/watch?v=NjXIIH9vcv0"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
