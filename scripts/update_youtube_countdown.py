@@ -11,9 +11,11 @@ from pathlib import Path
 
 CHANNEL_ID = os.getenv("YOUTUBE_CHANNEL_ID", "UCUzGQrN-lyyc0BWTYoJM_Sg")
 CHANNEL_TITLE = os.getenv("YOUTUBE_CHANNEL_TITLE", "What's AI")
+GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "louisfb01")
 GOAL = int(os.getenv("YOUTUBE_SUBSCRIBER_GOAL", "100000"))
 COUNTDOWN_OUTPUT = Path("images/youtube-countdown.svg")
 BUTTON_OUTPUT = Path("images/youtube.svg")
+GITHUB_FOLLOWERS_OUTPUT = Path("images/github-followers.svg")
 README = Path("README.md")
 LATEST_VIDEO_START = "<!-- LATEST_YOUTUBE_VIDEO:START -->"
 LATEST_VIDEO_END = "<!-- LATEST_YOUTUBE_VIDEO:END -->"
@@ -36,10 +38,14 @@ class LatestVideo:
     published_at: str | None = None
 
 
-def fetch_json(url: str) -> dict:
+def fetch_json(url: str, headers: dict[str, str] | None = None) -> dict:
+    request_headers = {"User-Agent": "louisfb01-profile-readme/1.0"}
+    if headers:
+        request_headers.update(headers)
+
     request = urllib.request.Request(
         url,
-        headers={"User-Agent": "louisfb01-profile-readme/1.0"},
+        headers=request_headers,
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
@@ -184,6 +190,20 @@ def fetch_latest_video(stats: ChannelStats) -> LatestVideo:
     return fetch_latest_video_from_rss()
 
 
+def fetch_github_followers() -> int:
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    token = os.getenv("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    username = urllib.parse.quote(GITHUB_USERNAME, safe="")
+    data = fetch_json(f"https://api.github.com/users/{username}", headers=headers)
+    return int(data["followers"])
+
+
 def format_count(value: int) -> str:
     if value >= 1_000_000:
         return f"{value / 1_000_000:.1f}M".replace(".0M", "M")
@@ -212,6 +232,28 @@ def build_countdown_svg(subscribers: int, source: str, exact: bool) -> str:
   <g shape-rendering="crispEdges">
     <rect width="{left_width}" height="20" fill="#555"/>
     <rect x="{left_width}" width="{right_width}" height="20" fill="#ff0000"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text x="{label_x * 10:.0f}" y="140" transform="scale(.1)" textLength="{(left_width - 16) * 10}">{html.escape(label)}</text>
+    <text x="{message_x * 10:.0f}" y="140" transform="scale(.1)" textLength="{(right_width - 16) * 10}">{html.escape(message)}</text>
+  </g>
+</svg>
+"""
+
+
+def build_badge_svg(label: str, message: str, color: str, source: str) -> str:
+    left_width = text_width(label)
+    right_width = text_width(message)
+    width = left_width + right_width
+    label_x = left_width / 2
+    message_x = left_width + right_width / 2
+    title = f"{label}: {message} (source: {source})"
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="20" role="img" aria-label="{html.escape(title)}">
+  <title>{html.escape(title)}</title>
+  <g shape-rendering="crispEdges">
+    <rect width="{left_width}" height="20" fill="#555"/>
+    <rect x="{left_width}" width="{right_width}" height="20" fill="{html.escape(color)}"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
     <text x="{label_x * 10:.0f}" y="140" transform="scale(.1)" textLength="{(left_width - 16) * 10}">{html.escape(label)}</text>
@@ -282,6 +324,7 @@ def update_latest_video_block(video: LatestVideo) -> None:
 def main() -> None:
     stats = fetch_channel_stats()
     latest_video = fetch_latest_video(stats)
+    github_followers = fetch_github_followers()
     COUNTDOWN_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     COUNTDOWN_OUTPUT.write_text(
         build_countdown_svg(stats.subscribers, stats.source, stats.exact),
@@ -291,10 +334,15 @@ def main() -> None:
         build_button_svg(stats.subscribers, stats.source, stats.exact),
         encoding="utf-8",
     )
+    GITHUB_FOLLOWERS_OUTPUT.write_text(
+        build_badge_svg("GitHub followers", f"{github_followers:,}", "#0A7FDB", "GitHub API"),
+        encoding="utf-8",
+    )
     update_latest_video_block(latest_video)
     print(
         f"Generated YouTube README assets from {stats.source}: "
-        f"{stats.subscribers} subscribers, latest video {latest_video.video_id}."
+        f"{stats.subscribers} subscribers, latest video {latest_video.video_id}; "
+        f"GitHub followers: {github_followers}."
     )
 
 
