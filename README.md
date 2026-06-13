@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=l0LMSuSvpEk">How do I setup agent loops?</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=Kd4y0F1Qb_w">Anthropic banned again! This time, for all of us…</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=l0LMSuSvpEk">
-    <img src="https://i.ytimg.com/vi/l0LMSuSvpEk/maxresdefault.jpg" alt="Latest What&#x27;s AI video: How do I setup agent loops?" width="560">
+  <a href="https://www.youtube.com/watch?v=Kd4y0F1Qb_w">
+    <img src="https://i.ytimg.com/vi/Kd4y0F1Qb_w/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Anthropic banned again! This time, for all of us…" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=l0LMSuSvpEk"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=Kd4y0F1Qb_w"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
