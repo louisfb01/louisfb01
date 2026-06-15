@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=ufUMFU3n3LQ">How people reacted to the pentagon AI deal?</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=33tiH9Otrg4">Why Every AI Agent Needs Context Compaction in 2026?</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=ufUMFU3n3LQ">
-    <img src="https://i.ytimg.com/vi/ufUMFU3n3LQ/maxresdefault.jpg" alt="Latest What&#x27;s AI video: How people reacted to the pentagon AI deal?" width="560">
+  <a href="https://www.youtube.com/watch?v=33tiH9Otrg4">
+    <img src="https://i.ytimg.com/vi/33tiH9Otrg4/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Why Every AI Agent Needs Context Compaction in 2026?" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=ufUMFU3n3LQ"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=33tiH9Otrg4"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
