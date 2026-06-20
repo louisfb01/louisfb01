@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="191" height="20" role="img" aria-label="GitHub followers: 1,639 (source: GitHub API)">
-  <title>GitHub followers: 1,639 (source: GitHub API)</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="191" height="20" role="img" aria-label="GitHub followers: 1,640 (source: GitHub API)">
+  <title>GitHub followers: 1,640 (source: GitHub API)</title>
   <g shape-rendering="crispEdges">
     <rect width="134" height="20" fill="#555"/>
     <rect x="134" width="57" height="20" fill="#0A7FDB"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
     <text x="670" y="140" transform="scale(.1)" textLength="1180">GitHub followers</text>
-    <text x="1625" y="140" transform="scale(.1)" textLength="410">1,639</text>
+    <text x="1625" y="140" transform="scale(.1)" textLength="410">1,640</text>
   </g>
 </svg>
