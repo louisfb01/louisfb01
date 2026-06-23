@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=sMvIMDWVLmQ">The hidden costs of cheap AI APIs</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=Sl5O7KVVF6M">Microsoft Says MAI-Thinking-1 Was Not Distilled From Another LLM</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=sMvIMDWVLmQ">
-    <img src="https://i.ytimg.com/vi/sMvIMDWVLmQ/maxresdefault.jpg" alt="Latest What&#x27;s AI video: The hidden costs of cheap AI APIs" width="560">
+  <a href="https://www.youtube.com/watch?v=Sl5O7KVVF6M">
+    <img src="https://i.ytimg.com/vi/Sl5O7KVVF6M/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Microsoft Says MAI-Thinking-1 Was Not Distilled From Another LLM" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=sMvIMDWVLmQ"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=Sl5O7KVVF6M"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
