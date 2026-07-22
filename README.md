@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=S1OYy-KwSj4">I dropped out of my PhD in AI (why)</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=MDHcmWmvqvo">Graph Engineering Explained, Without the Hype</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=S1OYy-KwSj4">
-    <img src="https://i.ytimg.com/vi/S1OYy-KwSj4/maxresdefault.jpg" alt="Latest What&#x27;s AI video: I dropped out of my PhD in AI (why)" width="560">
+  <a href="https://www.youtube.com/watch?v=MDHcmWmvqvo">
+    <img src="https://i.ytimg.com/vi/MDHcmWmvqvo/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Graph Engineering Explained, Without the Hype" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=S1OYy-KwSj4"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=MDHcmWmvqvo"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
