@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="191" height="20" role="img" aria-label="YouTube to 100K: 73,500 subscribers (source: YouTube API)">
-  <title>YouTube to 100K: 73,500 subscribers (source: YouTube API)</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="191" height="20" role="img" aria-label="YouTube to 100K: 73,600 subscribers (source: YouTube API)">
+  <title>YouTube to 100K: 73,600 subscribers (source: YouTube API)</title>
   <g shape-rendering="crispEdges">
     <rect width="127" height="20" fill="#555"/>
     <rect x="127" width="64" height="20" fill="#ff0000"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
     <text x="635" y="140" transform="scale(.1)" textLength="1110">YouTube to 100K</text>
-    <text x="1590" y="140" transform="scale(.1)" textLength="480">73,500</text>
+    <text x="1590" y="140" transform="scale(.1)" textLength="480">73,600</text>
   </g>
 </svg>
