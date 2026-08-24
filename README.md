@@ -44,12 +44,12 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=twI6UN8L-OI">6 guardrails to implement right now for vibe coding</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=twI6UN8L-OI">implement these right now for vibe coding</a>
 </p>
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=twI6UN8L-OI">
-    <img src="https://i.ytimg.com/vi/twI6UN8L-OI/maxresdefault.jpg" alt="Latest What&#x27;s AI video: 6 guardrails to implement right now for vibe coding" width="560">
+    <img src="https://i.ytimg.com/vi/twI6UN8L-OI/maxresdefault.jpg" alt="Latest What&#x27;s AI video: implement these right now for vibe coding" width="560">
   </a>
 </p>
 
