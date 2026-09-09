@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=YswNIq3VKt8">Open vs. closed models. Once more and for all 😤</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=KeyqBiQYMok">Why I Stopped Letting Codex Lead My Long Tasks</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YswNIq3VKt8">
-    <img src="https://i.ytimg.com/vi/YswNIq3VKt8/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Open vs. closed models. Once more and for all 😤" width="560">
+  <a href="https://www.youtube.com/watch?v=KeyqBiQYMok">
+    <img src="https://i.ytimg.com/vi/KeyqBiQYMok/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Why I Stopped Letting Codex Lead My Long Tasks" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YswNIq3VKt8"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=KeyqBiQYMok"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
