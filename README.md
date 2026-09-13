@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=ljJjFSrthHk">Announcing AI Engineering for Production!</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=-28P_Cvvg_w">How DeepSeek V4.1 Flash Actually Works: A Deep Dive</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=ljJjFSrthHk">
-    <img src="https://i.ytimg.com/vi/ljJjFSrthHk/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Announcing AI Engineering for Production!" width="560">
+  <a href="https://www.youtube.com/watch?v=-28P_Cvvg_w">
+    <img src="https://i.ytimg.com/vi/-28P_Cvvg_w/maxresdefault.jpg" alt="Latest What&#x27;s AI video: How DeepSeek V4.1 Flash Actually Works: A Deep Dive" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=ljJjFSrthHk"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=-28P_Cvvg_w"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
