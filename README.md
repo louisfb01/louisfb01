@@ -44,17 +44,21 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=-28P_Cvvg_w">How DeepSeek V4.1 Flash Actually Works: A Deep Dive</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=xc1pxkRYweE">Make your coding agent interview you.
+
+“Add login” leaves a lot unsaid: how long should sessions las</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=-28P_Cvvg_w">
-    <img src="https://i.ytimg.com/vi/-28P_Cvvg_w/maxresdefault.jpg" alt="Latest What&#x27;s AI video: How DeepSeek V4.1 Flash Actually Works: A Deep Dive" width="560">
+  <a href="https://www.youtube.com/watch?v=xc1pxkRYweE">
+    <img src="https://i.ytimg.com/vi/xc1pxkRYweE/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Make your coding agent interview you.
+
+“Add login” leaves a lot unsaid: how long should sessions las" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=-28P_Cvvg_w"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=xc1pxkRYweE"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
