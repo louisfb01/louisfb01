@@ -44,21 +44,21 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=xc1pxkRYweE">Make your coding agent interview you.
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=r1TneVqxx5Y">Don’t let your portfolio outsmart you.
 
-“Add login” leaves a lot unsaid: how long should sessions las</a>
+If AI helped build your project, be ready to explain the cod</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=xc1pxkRYweE">
-    <img src="https://i.ytimg.com/vi/xc1pxkRYweE/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Make your coding agent interview you.
+  <a href="https://www.youtube.com/watch?v=r1TneVqxx5Y">
+    <img src="https://i.ytimg.com/vi/r1TneVqxx5Y/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Don’t let your portfolio outsmart you.
 
-“Add login” leaves a lot unsaid: how long should sessions las" width="560">
+If AI helped build your project, be ready to explain the cod" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=xc1pxkRYweE"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=r1TneVqxx5Y"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
