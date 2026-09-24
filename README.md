@@ -44,21 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=KrW0w56Rg54">Saving AI tools is easy. Knowing when to use them takes practice.
-
-Here are six types of tools I use</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=rvdw0GOY5UY">One-shot prompt with Opus 5.5 on our benchmark 🤯</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=KrW0w56Rg54">
-    <img src="https://i.ytimg.com/vi/KrW0w56Rg54/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Saving AI tools is easy. Knowing when to use them takes practice.
-
-Here are six types of tools I use" width="560">
+  <a href="https://www.youtube.com/watch?v=rvdw0GOY5UY">
+    <img src="https://i.ytimg.com/vi/rvdw0GOY5UY/maxresdefault.jpg" alt="Latest What&#x27;s AI video: One-shot prompt with Opus 5.5 on our benchmark 🤯" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=KrW0w56Rg54"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=rvdw0GOY5UY"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
