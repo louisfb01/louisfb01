@@ -44,17 +44,21 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=rvdw0GOY5UY">One-shot prompt with Opus 5.5 on our benchmark 🤯</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=8shMuJwuLYU">Are open models catching up? 
+
+The best open-weight model vs the best closed model on our internal w</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=rvdw0GOY5UY">
-    <img src="https://i.ytimg.com/vi/rvdw0GOY5UY/maxresdefault.jpg" alt="Latest What&#x27;s AI video: One-shot prompt with Opus 5.5 on our benchmark 🤯" width="560">
+  <a href="https://www.youtube.com/watch?v=8shMuJwuLYU">
+    <img src="https://i.ytimg.com/vi/8shMuJwuLYU/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Are open models catching up? 
+
+The best open-weight model vs the best closed model on our internal w" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=rvdw0GOY5UY"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=8shMuJwuLYU"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
