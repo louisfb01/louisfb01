@@ -44,16 +44,12 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=8shMuJwuLYU">Are open models catching up? 
-
-The best open-weight model vs the best closed model on our internal w</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=8shMuJwuLYU">Are open models catching up?</a>
 </p>
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=8shMuJwuLYU">
-    <img src="https://i.ytimg.com/vi/8shMuJwuLYU/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Are open models catching up? 
-
-The best open-weight model vs the best closed model on our internal w" width="560">
+    <img src="https://i.ytimg.com/vi/8shMuJwuLYU/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Are open models catching up?" width="560">
   </a>
 </p>
 
