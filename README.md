@@ -44,21 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=elT9fBi_kIc">Every model on our internal writing benchmark was told one simple rule: zero em dashes.
-
-They wrote</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=tlV4kQumsKo">From Hype to Useful AI Agents: The 2023–2026 Timeline</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=elT9fBi_kIc">
-    <img src="https://i.ytimg.com/vi/elT9fBi_kIc/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Every model on our internal writing benchmark was told one simple rule: zero em dashes.
-
-They wrote" width="560">
+  <a href="https://www.youtube.com/watch?v=tlV4kQumsKo">
+    <img src="https://i.ytimg.com/vi/tlV4kQumsKo/maxresdefault.jpg" alt="Latest What&#x27;s AI video: From Hype to Useful AI Agents: The 2023–2026 Timeline" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=elT9fBi_kIc"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=tlV4kQumsKo"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
