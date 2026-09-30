@@ -44,21 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=xKHWEt6I2-U">We asked Opus 5.5 to write our whole book. It got a little carried away haha
-
-Opus 5.5 is the #1 wri</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=tQl5iR9-qsw">8 AI models write the same YouTube script at their real generation speed, sped up 60x. From our inte</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=xKHWEt6I2-U">
-    <img src="https://i.ytimg.com/vi/xKHWEt6I2-U/maxresdefault.jpg" alt="Latest What&#x27;s AI video: We asked Opus 5.5 to write our whole book. It got a little carried away haha
-
-Opus 5.5 is the #1 wri" width="560">
+  <a href="https://www.youtube.com/watch?v=tQl5iR9-qsw">
+    <img src="https://i.ytimg.com/vi/tQl5iR9-qsw/maxresdefault.jpg" alt="Latest What&#x27;s AI video: 8 AI models write the same YouTube script at their real generation speed, sped up 60x. From our inte" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=xKHWEt6I2-U"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=tQl5iR9-qsw"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
