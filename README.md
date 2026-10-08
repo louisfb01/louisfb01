@@ -44,21 +44,21 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=NSwbM2YeYRc">Books are slow. I’m happy with that.
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=6wJzfVERf_0">The AI images we rejected turned out to be useful references.
 
-When I want to understand something properly, I like having ti</a>
+We showed the model what to avoid alo</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=NSwbM2YeYRc">
-    <img src="https://i.ytimg.com/vi/NSwbM2YeYRc/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Books are slow. I’m happy with that.
+  <a href="https://www.youtube.com/watch?v=6wJzfVERf_0">
+    <img src="https://i.ytimg.com/vi/6wJzfVERf_0/maxresdefault.jpg" alt="Latest What&#x27;s AI video: The AI images we rejected turned out to be useful references.
 
-When I want to understand something properly, I like having ti" width="560">
+We showed the model what to avoid alo" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=NSwbM2YeYRc"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=6wJzfVERf_0"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
