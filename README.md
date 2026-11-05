@@ -44,17 +44,17 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=6JMg42GH8qU">Why we built ToneBench (another benchmark)</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=ODYNKSlK30Y">How to Build Your Own LLM Benchmark, Step by Step</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=6JMg42GH8qU">
-    <img src="https://i.ytimg.com/vi/6JMg42GH8qU/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Why we built ToneBench (another benchmark)" width="560">
+  <a href="https://www.youtube.com/watch?v=ODYNKSlK30Y">
+    <img src="https://i.ytimg.com/vi/ODYNKSlK30Y/maxresdefault.jpg" alt="Latest What&#x27;s AI video: How to Build Your Own LLM Benchmark, Step by Step" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=6JMg42GH8qU"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=ODYNKSlK30Y"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
