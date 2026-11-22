@@ -44,17 +44,21 @@ My bias is simple: start with the simplest system that can work, add agents only
 ### What I'm Up To?
 
 <p align="center">
-  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=jVyvge1su5o">Can an AI Model Retrain Itself? Meta Just Tried It</a>
+  <strong>Watch my most recent video:</strong> <a href="https://www.youtube.com/watch?v=eoBd0Fug7mA">Book or course? Which one should you learn AI engineering from?
+
+I&#x27;ve made both. And for some of you</a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=jVyvge1su5o">
-    <img src="https://i.ytimg.com/vi/jVyvge1su5o/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Can an AI Model Retrain Itself? Meta Just Tried It" width="560">
+  <a href="https://www.youtube.com/watch?v=eoBd0Fug7mA">
+    <img src="https://i.ytimg.com/vi/eoBd0Fug7mA/maxresdefault.jpg" alt="Latest What&#x27;s AI video: Book or course? Which one should you learn AI engineering from?
+
+I&#x27;ve made both. And for some of you" width="560">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=jVyvge1su5o"><strong>Watch on YouTube</strong></a>
+  <a href="https://www.youtube.com/watch?v=eoBd0Fug7mA"><strong>Watch on YouTube</strong></a>
 </p>
 <!-- LATEST_YOUTUBE_VIDEO:END -->
 
